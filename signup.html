@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/fav4.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/signup.css">
+
+    <script src="https://kit.fontawesome.com/f6ec98831b.js" crossorigin="anonymous"></script>
+    <script src="js/signup.js"></script>
+    <title>Sign Up | Bus Management</title>
+</head>
+<body>
+
+    <div id="preloader"></div>
+
+    <div class="container">
+        <center>
+        <h1>Create an Account</h1>
+        <p>Already have an account? <a class="sign-in" href="login.html">Sign in</a></p>
+
+        <form name="form" class="form" action="php/signup.php" method="post" onsubmit="return validate()">
+            <div class="details">
+                
+                <input class="input-field" id="mail" type="text" placeholder="Email" name="mail"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        oninvalid="this.setCustomValidity('Sorry , we dont recognize this email.')"
+                        onchange="try{setCustomValidity('')}catch(e){}"
+                        oninput="setCustomValidity(' ')"><br>
+                <input class="input-field" id="name" type="text" placeholder="First Name" name="name"
+                        pattern="[a-z]{5,}$"
+                        oninvalid="this.setCustomValidity('Minimum 5 characters')"
+                        onchange="try{setCustomValidity('')}catch(e){}"
+                        oninput="setCustomValidity(' ')"> <br>
+                <input class="input-field" id="reg" type="text" placeholder="Roll No" name="reg"
+                        pattern="MY(.)SC(.)[A-Z0-9]{10,}"
+                        oninvalid="this.setCustomValidity('MY.SC.##########')"
+                        onchange="try{setCustomValidity('')}catch(e){}"
+                        oninput="setCustomValidity(' ')"> <br>
+                <select class="drop-down" name="course" id="1">
+                    <option value="0" selected> [Choose Course] </option>
+                    <option value="B.Com">B.Com</option>
+                    <option value="B.Com[T&F]">B.Com[T&F]</option>
+                    <option value="BBA">BBA</option>
+                    <option value="BCA">BCA</option>
+                    <option value="BCA [D.S]">BCA [D.S]</option>
+                    <option value="B.Sc [VM]">B.Sc [VM]</option>
+                    <option value="B.Sc [Honours Chem]">B.Sc [Honours Chem]</option>
+                    <option value="B.Sc [PCM]">B.Sc [PCM]</option>
+                    <option value="B.Sc [PMCS]">B.Sc [PMCS]</option>
+                    <option value="MSc [VC]">MSc [VC]</option>
+                    <option value="M.Sc [VC]">M.Sc [VC]</option>
+                    <option value="M.Com Finance and Systems">M.Com Finance and Systems</option>
+                    <option value="MCA">MCA</option>
+                    <option value="M.Sc chemistry">M.Sc chemistry</option>
+                    <option value="M.A [VM and C]">M.A [VM and C]</option>
+                    <option value="M.A [J and MC]">M.A [J and MC]</option>
+                    <option value="Integrated BCA-MCA">Integrated BCA-MCA</option>
+                    <option value="Integrated B.Sc-M.Sc [VC]">Integrated B.Sc-M.Sc [VC]</option>
+                    <option value="Integrated B.Sc-M.Sc [Chem]">Integrated B.Sc-M.Sc [Chem]</option>
+                </select> <br>
+                <input class="input-field" id="sem" type="text" placeholder="Semester" name="sem"> <br>
+                <input class="input-field" id="pass" type="password" placeholder="Password" name="pass"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$"
+                        oninvalid="this.setCustomValidity('Minimum 5 characters and 1 number:')"
+                        onchange="try{setCustomValidity('')}catch(e){}"
+                        oninput="setCustomValidity(' ')"> <br> 
+            </div>
+    
+            <div class="details">
+                <h1>Address Details</h1>
+                <input class="input-field" id="door_no" type="text" placeholder="Door No" name="door_no"> <br>
+                <input class="input-field" id="street_name" type="text" placeholder="Street Name" name="street_name"> <br>
+                <input class="input-field" id="landmark" type="text" placeholder="Landmark" name="landmark"> <br>
+                <input class="input-field" id="pincode" type="text" placeholder="Pincode" name="pincode"
+                        pattern="[0-9]{6}"
+                        oninvalid="this.setCustomValidity('######')"
+                        onchange="try{setCustomValidity('')}catch(e){}"
+                        oninput="setCustomValidity(' ')"> <br>
+            </div>
+            <p id="error" ></p> <br>
+            <input class="submit-btn" type="submit" value="Sign Up >">
+        </form>
+        </center>
+    </div>
+
+    <script>
+        var loader = document.getElementById("preloader");
+        const fadeEffect = setInterval(() => 
+        {
+            if (!preloader.style.opacity) 
+            {
+                preloader.style.opacity = 1;
+            }
+            if (preloader.style.opacity > 0) 
+            {
+                preloader.style.opacity -= 0.1;
+            } 
+            else 
+            {
+                clearInterval(fadeEffect);
+                loader.style.display = "none";
+            }
+            
+        }, 100);
+
+        window.addEventListener('load', fadeEffect);
+    </script>
+
+</body>
+</html>

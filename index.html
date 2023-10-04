@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/fav4.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <script src="https://kit.fontawesome.com/f6ec98831b.js" crossorigin="anonymous"></script>
+
+    <title>Amrita Bus Transport</title>
+</head>
+<body>
+
+
+    <div id="preloader"></div>
+
+    <div class="container" id="main"> 
+        <a href="index.html">
+            <img class="amrita-logo" src="images/amrita-logo-w.png" alt="amrita-logo">  
+        </a>
+
+        <div class="login">
+            <a href="login.html">
+                <button class="login-btn">LOGIN</button>
+            </a>
+            
+        </div>
+        
+        <div class="nav">
+            
+            <a href="homepage.php">
+                <button class="nav-btn">DASHBOARD</button>
+            </a>
+            <a href="available_bus.html">
+                <button class="nav-btn">AVAILABLE BUS</button>
+            </a>
+            <a href="team.html">
+                <button class="nav-btn">TEAM</button>
+            </a>
+            
+        </div>
+        
+        <div class="heading">
+            <h1 class="l1">Track</h1>
+            <h1 class="l1">while</h1>
+            <h1 class="l1">you go.</h1>
+        </div>
+
+        
+        <div class="started">
+            <a href="signup.html">
+                <button class="started-btn">GET STARTED</button>
+            </a>
+            
+            <a href="#about">
+                <button class="learn-btn">LEARN MORE</button>
+            </a>
+            
+            <a href="https://www.amrita.edu/" target="_blank">
+                <button class="amrita-btn">
+                    AMRITA
+                    <i class="fa fa-link"></i>
+                </button>
+            </a>
+        </div>
+        
+    </div>
+    <img class="background-img" src="images/background.jpg" alt="Background image">
+
+    <div class="container2" id="about">
+        <center>
+            <div class="about">
+                <h1 style="font-size:90px;">" Never Be Late Again "</h1>
+                <h1>- Devs<a class="emoji" href=""> <span> 😏 </span></a> </h1>
+                <br> <br>
+                <h1 style="font-size: 30px;">" User friendly student made website from scratch, for availing bus facilities from the college "</h1>
+            </div>
+
+        <a href="#main">
+            <i class="fa-solid fa-caret-up"></i>
+        </a>
+
+        <div class="footer">
+            <p>Amrita Bus Transport | All Rights Reserved 2022.</p>
+        </div>
+        </center>
+    </div>
+
+    
+    <script>
+        var loader = document.getElementById("preloader");
+        const fadeEffect = setInterval(() => 
+        {
+            if (!preloader.style.opacity) 
+            {
+                preloader.style.opacity = 1;
+            }
+            if (preloader.style.opacity > 0) 
+            {
+                preloader.style.opacity -= 0.1;
+            } 
+            else 
+            {
+                clearInterval(fadeEffect);
+                loader.style.display = "none";
+            }
+            
+        }, 100);
+
+        window.addEventListener('load', fadeEffect);
+    </script>
+
+</body>
+</html>

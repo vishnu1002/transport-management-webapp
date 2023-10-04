@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/fav4.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/team.css">
+
+    <script src="https://kit.fontawesome.com/f6ec98831b.js" crossorigin="anonymous"></script>
+
+    <title>The Team</title>
+</head>
+<body>
+
+    <div id="preloader"></div>
+
+    <div class="container">
+
+        <img class="team-img" src="images/team2.png" alt="vishnu and saketh">
+
+        <div class="left-col">
+            <div class="left-title">
+                <h3>Vishnu N</h4>
+                <p class="desc">MY.SC.I5MCA20001</p>
+                <p class="desc">Front End Developer</p>
+                <p class="desc">UI, HTML5, CSS, PHP</p>
+                <a href="https://www.instagram.com/_._v.art_._/" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+            
+        </div>
+        <div class="right-col">
+            <div class="right-title">
+                <h3>Saketh P</h3>
+                <p class="desc">MY.SC.I5MCA20003</p>
+                <p class="desc">Back End Developer</p>
+                <p class="desc">UI, HTML5, CSS, PHP</p>
+                <a href="https://www.instagram.com/__.saketh.___/" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script>
+        var loader = document.getElementById("preloader");
+        const fadeEffect = setInterval(() => 
+        {
+            if (!preloader.style.opacity) 
+            {
+                preloader.style.opacity = 1;
+            }
+            if (preloader.style.opacity > 0) 
+            {
+                preloader.style.opacity -= 0.1;
+            } 
+            else 
+            {
+                clearInterval(fadeEffect);
+                loader.style.display = "none";
+            }
+            
+        }, 100);
+
+        window.addEventListener('load', fadeEffect);
+    </script>
+
+</body>
+</html>
