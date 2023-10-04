@@ -1,0 +1,236 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#preloader
+{
+    background: white url("../images/loader-t.gif") no-repeat center center;
+    background-size: 10%;
+    transition: opacity 0.3s;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.container
+{
+    position: relative;
+}
+
+.amrita-logo
+{
+    position: absolute;
+    width: 210px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    margin-top: 50px;
+    margin-left: 50px;
+    
+    cursor: pointer;
+}
+
+.background-img
+{
+    width: 100%;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login
+{
+    position: absolute;
+    right: 0px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.login-btn
+{
+    cursor: pointer;
+    margin-top: 50px;
+    border-radius: 15px;
+    border-style: none;
+    background-color: #0B51E6;
+    color: white;
+    height: 50px;
+    width: 170px;
+}
+
+.login-btn:hover
+{
+    transition: 0.5s;
+    box-shadow: 0px 0px 30px rgba(11, 81, 230, 1);
+}
+
+.nav
+{
+    margin-top: 50px;
+    margin-left: 27%;
+    position: absolute;
+}
+
+.nav-btn
+{
+    cursor: pointer;
+    border-style: none;
+    border-color: transparent;
+    background-color: transparent;
+    border-radius: 15px;
+    margin-left: 20px;
+    height: 50px;
+    width: 200px;
+    color: white;
+}
+
+.heading
+{
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 150px;
+}
+
+.l1
+{
+    color: white;
+    font-size: 90px;
+}
+
+.started
+{
+    position: absolute;
+    margin-top: 43%;
+    margin-left: 13%;
+}
+
+.started-btn, .learn-btn
+{
+    cursor: pointer;
+    border-radius: 15px;
+    border-style: none;
+    border-color: transparent;
+    background-color: #0B51E6;
+    color: white;
+    height: 50px;
+    width: 200px;
+    bottom: 0px;
+    left: 170px;
+}
+
+.learn-btn
+{
+    margin-left: 20px;
+    background-color: transparent;
+    left: 400px;
+}
+
+.amrita-btn
+{
+    cursor: pointer;
+    margin-left: 590px;
+    border-radius: 15px;
+    color: white;
+    border-style: none;
+    border-color: transparent;
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    bottom: 0px;
+    right: 170px;
+}
+
+.started-btn:hover
+{
+    box-shadow: 0px 0px 50px rgb(11, 81, 230);
+    transition: 0.5s;
+}
+
+.learn-btn:hover, .amrita-btn:hover, .nav-btn:hover
+{
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.fa
+{
+   margin-left: 10px;
+}
+
+.container2
+{
+    height: 510px;
+}
+
+.about
+{
+    border-radius: 30px;
+    padding: 90px;
+    margin-top: 160px;
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+    
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.3);
+}
+
+.fa-solid
+{
+    font-size: 70px;
+    margin-top: 50px;
+    color: #0B51E6;
+}
+
+.footer
+{
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.fa-solid:hover
+{
+    color: black;
+}
+
+.emoji
+{
+    text-decoration: none;
+    cursor:grab;
+}
+.emoji:hover span
+{
+    display: none;
+}
+
+.emoji:hover::before
+{
+    content: " 👀 ";
+}
+
+body
+{
+    overflow: overlay;
+}
+
+body::-webkit-scrollbar 
+{
+    width: 12px;
+}
+  
+body::-webkit-scrollbar-track 
+{
+    background: transparent; 
+}
+
+body::-webkit-scrollbar-thumb 
+{
+    background-color: #ECB365;
+    border-radius: 50px;
+}

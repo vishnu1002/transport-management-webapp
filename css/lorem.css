@@ -1,0 +1,43 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.lorem
+{   
+    color: red;
+    background-color: blue;
+    font-size: 20px;
+    line-height: 33.5px;
+    text-align: justify;
+
+    animation: blinker 0.5s infinite;
+}
+
+body::-webkit-scrollbar 
+{
+    width: 12px;
+}
+  
+body::-webkit-scrollbar-track 
+{
+    background: transparent; 
+}
+
+body::-webkit-scrollbar-thumb 
+{
+    background-color: white;
+    border-radius: 50px;
+}
+
+  
+@keyframes blinker 
+{
+0%
+{
+    color: blue;
+    background-color: red;
+}
+}

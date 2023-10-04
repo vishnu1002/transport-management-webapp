@@ -1,0 +1,27 @@
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    color: black;
+}
+
+.lottie
+{
+    margin-top: 20px;
+}
+
+h1
+{
+    font-size: 150px;
+}
+
+p
+{
+    font-size: 20px;   
+}

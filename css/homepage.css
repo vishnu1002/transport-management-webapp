@@ -1,0 +1,242 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#preloader
+{
+    background: white url("../images/loader-t.gif") no-repeat center center;
+    background-size: 10%;
+    transition: opacity 0.3s;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.amrita-logo
+{
+    width: 210px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    margin-top: 50px;
+    margin-left: 50px;
+    
+    cursor: pointer;
+}
+
+.side-panel
+{
+    height: 100%;
+    width: 25%;
+    position: absolute;
+    background-color: white;
+    box-shadow: 10px 0px 50px rgba(0,0,0,0.50);
+}
+
+h3
+{
+    margin-top: 30%;
+    margin-left: 30px;
+}
+
+.nav
+{
+    margin-top: 20%;
+    margin-left: 30px;
+}
+
+.btn
+{
+    height: 50px;
+    width: 90%;
+
+    border-radius: 10px;
+    background-color: #dbdbdb;
+    border-style: none;
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    background-color: #0B51E6;
+    color: white;
+    transition: 0.2s;
+}
+
+.profile
+{
+    margin-top: 90px;
+    margin-left: 32%;
+}
+
+.std-name
+{
+    font-size: 20px;
+}
+
+.std-roll
+{
+    color: #413F42;
+    font-size: 13px;
+}
+
+.map
+{
+    height: 100%;
+    width: 75%;
+    right: 0;
+    position: absolute;
+    background-color: beige;
+    
+}
+
+.map-img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.google-map
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.floating
+{
+    margin-top: 30px;
+    margin-left: 64%;
+    background-color: white;
+    border-radius: 30px;
+    width: 34%;
+    height: 13%;
+    position: relative;
+    box-shadow: 6px 6px 30px rgba(0,0,0,0.50);
+}
+
+.location
+{
+    margin-top: 30px;
+    position: absolute;
+    margin-left: 15%;
+    left: 0px;
+}
+
+.distance
+{
+    margin-top: 30px;
+    position: absolute;
+    margin-right: 20%;
+    
+    right: 0px;
+}
+
+.bus
+{
+    margin-top: 20px;
+    margin-left: 86%;
+    background-color: white;
+    border-radius: 20px;
+    width: 12%;
+    height: 12%;
+    text-align: center;
+    position: absolute;
+    box-shadow: 6px 6px 30px rgba(0,0,0,0.50);
+}
+
+.bus-no
+{
+    margin-top: 25px;
+}
+
+.driver
+{
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 50%;
+    height: 25%;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 30px rgba(0,0,0,0.50);
+}
+
+.profile-driver
+{
+    margin-top: 30px;
+    margin-left: 6%;
+    position: absolute;
+}
+
+.call
+{
+    position: absolute;
+    right: 0px;
+    margin-top: 7%;
+    margin-right: 10%;
+}
+
+.call-btn
+{
+    cursor: pointer;
+    height: 50px;
+    width: 120px;
+    border-style: none;
+    border-radius: 50px;
+    background-color: #0B51E6;
+    color: white;
+}
+
+.call-btn:hover
+{
+    transition: 0.2s;
+    border: 3px solid black;
+    color: black;
+    background-color: white;
+}
+
+
+.reg, .exp
+{
+    position: absolute;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    bottom: 0px;
+}
+
+.phone, .badge
+{
+    position: absolute;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.exp
+{
+    margin-left: 30%;
+}
+
+.badge
+{
+    margin-right: 30%;
+}
+
+.d
+{
+    font-size: 13px;
+}
+
+.b
+{
+    font-weight: bolder;
+}
